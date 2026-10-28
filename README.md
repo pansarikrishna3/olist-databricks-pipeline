@@ -16,7 +16,7 @@ PySpark · Databricks (serverless) · Delta Lake · SQL · MLflow · XGBoost · 
 
 | Layer | Notebook | What it does |
 |---|---|---|
-| Bronze | `01_bronze` | Ingests the 9 raw CSVs into Delta tables as-is, adding an `ingested_at` timestamp. |
+| Bronze | `01_Bronze` | Ingests the 9 raw CSVs into Delta tables as-is, adding an `ingested_at` timestamp. |
 | Silver | `02_silver` | Removes duplicates, parses timestamps, joins orders/items/customers/sellers/products/payments/reviews, adds English category names, and derives `delivery_days`, `estimated_days` and `is_late`. Runs the data-quality checks. |
 | Gold | `03_gold` | Builds analytics tables: monthly revenue by category, delivery performance by state, seller performance, review score vs lateness, and customer metrics. |
 | Model | `04_model` | Builds an order-level dataset, trains two models, and logs runs to MLflow. |
