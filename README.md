@@ -59,11 +59,12 @@ XGBoost parameters: 300 trees, max depth 5, learning rate 0.05, subsample 0.8, c
 - Visuals are notebook charts rather than a published dashboard.
 
 ## Screenshots
-Charts from `03_gold` are in the `screenshots/` folder:
-- `revenue_trend.png`: monthly revenue
-- `late_rate_by_state.png`: late-delivery rate by customer state
-- `top_categories.png`: top 10 categories by revenue
-- `review_vs_lateness.png`: average review score, on-time vs late
+Charts from `03_gold`:
+
+![Monthly revenue](03_gold_chart_1.png)
+![Late-delivery rate by state](03_gold_chart_2.png)
+![Top 10 categories by revenue](03_gold_chart_3.png)
+![Review score, on-time vs late](03_gold_chart_4.png)
 
 ## How to reproduce
 1. Create a free [Databricks Free Edition](https://www.databricks.com/learn/free-edition) workspace.
